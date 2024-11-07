@@ -1,0 +1,146 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.back {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  background-color: transparent;
+  color: #00000098;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  z-index: 111;
+  text-decoration: none;
+  animation: rotate 1s linear infinite;
+  transition: all 0.2s ease;
+}
+@keyframes rotate {
+  from {
+    transform: scale(1);
+    transition: all 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  to {
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+}
+body {
+  font-family: "Poppins", serif;
+
+  background: linear-gradient(
+    150deg,
+    #f96332,
+    #ff6f61,
+    #ffa07a,
+    #87cefa,
+    #4a90e2,
+    #ffff66,
+    #33ccff,
+    #ff33cc,
+    #ff6633,
+    #00ff66,
+    #9933ff,
+    #ffcc00,
+    #ff4444
+  );
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s infinite;
+  animation-timing-function: linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  height: 100vh;
+  padding: 13px;
+}
+section {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  border-radius: 5px;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  text-align: center;
+  max-width: 70%;
+  width: 100%;
+  color: white;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #121619;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 125%;
+  text-align: center;
+  color: #05f;
+  margin-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.info h3 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.info p {
+  color: #666;
+  font-size: 0.9em;
+}
+.card img {
+  width: 120px;
+}
