@@ -18,7 +18,26 @@
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
   margin-bottom: 15px;
 }
+.linkss{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.linkss a:nth-child(2) {
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  border-radius: 25px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  margin-bottom: 15px;
+}
 
-.link:hover {
+.linkss a:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
